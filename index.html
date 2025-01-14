@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/download.png" type="image/png" />
+    <title>
+      Food Grocery Delivery-Restaurants near me in Pakistan|foodpanda
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header <!-- Navbar -->
+      <nav class="activeNav">
+        <!-- <div class="navbar1st">
+            <div class="icon"><img alt="rider-banner-icon" data-testid="rider-banner-icon" src="https://micro-assets.foodora.com/img/ic-rider-icon.svg"></div>
+            <div class="head-para">Do you need a business account?</div>
+            <div class="btn"><button class="button-apply">sign up now</button></div>
+        </div> -->
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          class="profile-icon-medium"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          data-testid="personal-icon"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12 11.5C13.933 11.5 15.5 9.933 15.5 8C15.5 6.067 13.933 4.5 12 4.5C10.067 4.5 8.50001 6.067 8.50001 8C8.50001 9.933 10.067 11.5 12 11.5ZM10.0566 14.2045C10.679 14.071 11.33 14.0001 12 14C12.0003 14 12.0007 14 12.001 14C12.6709 14 13.3218 14.0708 13.9442 14.2042C17.1008 14.881 19.5251 17.1688 19.9907 20.0041C20.0802 20.5491 19.6241 21 19.0718 21H4.93021C4.37792 21 3.92177 20.5491 4.01127 20.0041C4.47684 17.1692 6.90063 14.8815 10.0566 14.2045ZM10.1743 12.6562C8.31584 11.9269 7.00001 10.1171 7.00001 8C7.00001 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8C17 10.1169 15.6845 11.9265 13.8263 12.656C13.2609 12.8779 12.6452 12.9999 12.001 13C12.0007 13 12.0003 13 12 13C11.3557 13 10.7399 12.8781 10.1743 12.6562ZM18.3216 19.5C17.5644 17.2951 15.1351 15.5 12.001 15.5C8.86687 15.5 6.43759 17.2951 5.6804 19.5H18.3216Z"
+          ></path>
+        </svg>
+        <div class="logo">
+          <img src="images/foodpanda-logo-RGB-horizontal.webp" alt="" />
+        </div>
+        <div class="navbar-btn-icons">
+          <button class="btn-login">Log in</button>
+          <button class="btn-signup">Sign up</button>
+          <i
+            class="fa-solid fa-globe"
+            style="cursor: pointer; color: #39434d"
+          ></i>
+          <div
+            style="
+              font-size: 13px;
+              margin-left: 7px;
+              margin-right: 8px;
+              color: #39434d;
+              cursor: pointer;
+            "
+          >
+            EN
+          </div>
+          <i
+            class="fa-solid fa-angle-down"
+            style="color: #e21b70; margin-right: 20px; cursor: pointer"
+          >
+          </i>
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            class="fl-none"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12.0021 2C14.5418 2 16.4241 3.6512 16.5538 6.15854H19.8491C20.4014 6.15854 20.8491 6.60625 20.8491 7.15854C20.8491 7.20585 20.8457 7.25311 20.8391 7.29996L19.1248 19.1414C19.0544 19.6341 18.6325 20 18.1348 20H5.86942C5.37176 20 4.94984 19.6341 4.87947 19.1414L3.16518 7.29996C3.08707 6.75322 3.46697 6.24669 4.0137 6.16859C4.06055 6.16189 4.10781 6.15854 4.15513 6.15854L7.36129 6.16397C7.49108 3.65663 9.46248 2 12.0021 2ZM17.5607 16.25H6.44235C6.22143 16.25 6.04235 16.4291 6.04235 16.65C6.04235 16.669 6.04369 16.6879 6.04638 16.7067L6.25397 18.1567C6.28217 18.3537 6.45092 18.5 6.64993 18.5H17.3533C17.5523 18.5 17.7211 18.3537 17.7492 18.1566L17.9567 16.7066C17.988 16.488 17.836 16.2853 17.6174 16.254C17.5986 16.2513 17.5797 16.25 17.5607 16.25ZM18.8109 7.65854H5.19233C4.97142 7.65854 4.79233 7.83762 4.79233 8.05854C4.79233 8.32251 4.79367 8.09637 4.79635 8.11511L5.71793 14.4066C5.74609 14.6036 5.91486 14.75 6.11391 14.75H17.8891C18.0882 14.75 18.2569 14.6036 18.2851 14.4066L19.2069 8.11513C19.2381 7.89643 19.0862 7.69381 18.8675 7.66256C18.8487 7.65988 18.8298 7.65854 18.8109 7.65854ZM12.0021 3.40323C10.4163 3.40323 9.15495 4.32251 8.91234 5.80175C8.88507 5.96802 8.98943 6.12701 9.15495 6.15854C9.17377 6.16212 9.19289 6.16392 9.21204 6.1639L14.7134 6.15847C14.8772 6.15843 15.0099 6.02566 15.0099 5.86189C15.0099 5.84361 14.9631 5.82209 15.0049 5.80742C14.655 4.32251 13.5918 3.40323 12.0021 3.40323Z"
+            ></path>
+          </svg>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero -->
+      <section class="hero-section">
+        <div class="bg-wraper"></div>
+        <h3>It's the food and groceries you love, delivered</h3>
+        <div class="activ">
+          <div class="input-container">
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="your street and street number"
+            />
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              class="fl-none"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="#c31760"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 2C12.4142 2 12.75 2.33579 12.75 2.75L12.7506 3.67925C12.7507 3.88008 12.8998 4.04968 13.0989 4.07562C13.1524 4.08259 13.1986 4.08909 13.2375 4.09514C16.6725 4.62856 19.3848 7.34731 19.9084 10.7855C19.9135 10.8188 19.9189 10.8575 19.9247 10.9019C19.9506 11.1011 20.1204 11.2502 20.3214 11.2502L21.25 11.25C21.6642 11.25 22 11.5858 22 12C22 12.4142 21.6642 12.75 21.25 12.75L20.3212 12.7506C20.1205 12.7507 19.951 12.8995 19.9249 13.0985C19.9211 13.1273 19.9175 13.1532 19.9141 13.1762C19.4013 16.6567 16.647 19.4078 13.1649 19.9158C13.145 19.9187 13.1228 19.9218 13.0984 19.925C12.8995 19.9511 12.7507 20.1206 12.7506 20.3213L12.75 21.25C12.75 21.6642 12.4142 22 12 22C11.5858 22 11.25 21.6642 11.25 21.25L11.2502 20.3213C11.2502 20.1203 11.1011 19.9505 10.9018 19.9246C10.8535 19.9183 10.8115 19.9124 10.7758 19.9069C7.33814 19.379 4.62167 16.6629 4.09327 13.2254C4.08776 13.1896 4.08184 13.1474 4.07552 13.0989C4.04958 12.8997 3.87997 12.7507 3.67912 12.7506L2.75 12.75C2.33579 12.75 2 12.4142 2 12C2 11.5858 2.33579 11.25 2.75 11.25L3.67818 11.2502C3.87895 11.2502 4.04865 11.1015 4.07487 10.9024C4.07777 10.8805 4.08053 10.8604 4.08317 10.8422C4.58738 7.36412 7.32923 4.61075 10.8016 4.08916C10.8307 4.08479 10.8642 4.08013 10.902 4.07519C11.1012 4.04909 11.2502 3.87936 11.2502 3.67848L11.25 2.75C11.25 2.33579 11.5858 2 12 2ZM12 5.5C8.41015 5.5 5.5 8.41015 5.5 12C5.5 15.5899 8.41015 18.5 12 18.5C15.5899 18.5 18.5 15.5899 18.5 12C18.5 8.41015 15.5899 5.5 12 5.5ZM12 8C14.2091 8 16 9.79086 16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8ZM12 9.5C10.6193 9.5 9.5 10.6193 9.5 12C9.5 13.3807 10.6193 14.5 12 14.5C13.3807 14.5 14.5 13.3807 14.5 12C14.5 10.6193 13.3807 9.5 12 9.5Z"
+              ></path>
+            </svg>
+            <span>Locate me</span>
+            <button>Find food</button>
+          </div>
+        </div>
+        <!-- <div class="button-container">
+             <button>find food</button>
+         </div> -->
+      </section>
+      <!-- You prepare the food, we handle the rest -->
+      <section class="prepare-the-food">
+        <p class="partner">You prepare the food, we handle the rest</p>
+        <div class="bg-image"></div>
+        <div class="content">
+          <div class="header-list">
+            <p class="list-item">List your restaurant or shop on foodpanda</p>
+            <p>
+              Would you like millions of new customers to enjoy your amazing
+              food and groceries? So would we!
+            </p>
+            <p>
+              It's simple: we list your menu and product lists online, help you
+              process orders, pick them up, and deliver them to hungry pandas –
+              in a heartbeat!
+            </p>
+            <p>Interested? Let's start our partnership today!</p>
+            <button class="scale-up-center">Get Started</button>
+          </div>
+        </div>
+      </section>
+      <!--Find us in these cities and many more! -->
+      <section class="cities">
+        <p class="caption-heading">Find us in these cities and many more!</p>
+        <div class="container">
+          <div class="row">
+            <!-- Row 1 -->
+            <div class="card">
+              <img
+                src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Islamabad.jpg?width=400&height=400"
+                alt="Islamabad"
+              />
+              <p>Islamabad</p>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Karachi.jpg?width=400&height=400"
+                alt="Karachi"
+              />
+              <p>Karachi</p>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Lahore.jpg?width=400&height=400"
+                alt="Lahore"
+              />
+              <p>Lahore</p>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Faisalabad.jpg?width=400&height=400"
+                alt="Faisalabad"
+              />
+              <p>Faisalabad</p>
+            </div>
+          </div>
+          <div class="row">
+            <!-- row-2 -->
+            <div class="card">
+              <img
+                src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Rawalpindi.jpg?width=400&height=400"
+                alt="Rawalpindi"
+              />
+              <p>Rawalpindi</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/7c/ca/dc/caption.jpg?w=800&h=800&s=1"
+                alt="Abbottabad"
+              />
+              <p>Abbottabad</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://adventureplanners.net/wp-content/uploads/2024/11/Best-Places-to-visit-in-Bahawalpur-2025.jpg"
+                alt="Bahawalpur"
+              />
+              <p>Bahawalpur</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://i.ytimg.com/vi/7X41ZRVAFkE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCmelN9RmDQ2wPp13WFqF1hrk2NJA"
+                alt="Dera Gazi Khan"
+              />
+              <p>Dera Gazi Khan</p>
+            </div>
+          </div>
+          <div class="row">
+            <!-- row-3 -->
+            <div class="card">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/d0/de/42/mughal-mahal-hotel-nightt.jpg?w=1400&h=1400&s=1"
+                alt="Dera Gazi Khan"
+              />
+              <p>Gujranwala</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Mosque_in_Gujrat_Pakistan.JPG/1200px-Mosque_in_Gujrat_Pakistan.JPG"
+                alt="Gujrat"
+              />
+              <p>Gujrat</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Hyderabad.jpg?width=400&height=400"
+                alt="Hyderabad"
+              />
+              <p>Hyderabad</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBLRxtUdoEebU9wPm4Ea-vLA918kH3nIM4rI4RN7deZuWWoq-klTd2lpl8Gbi5B3R02B0&usqp=CAU"
+                alt="Jhelum"
+              />
+              <p>Jhelum</p>
+            </div>
+          </div>
+          <div class="row">
+            <!-- row-4 -->
+
+            <div class="card">
+              <img
+                src="https://photos.wikimapia.org/p/00/03/51/96/92_big.jpg"
+                alt="Kamoke"
+              />
+              <p>Kamoke</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://t4.ftcdn.net/jpg/04/28/54/97/360_F_428549762_qBPU3wnJIDMlBJU20cOiqwJZrAW9ZU4G.jpg"
+                alt="Larkana"
+              />
+              <p>Larkana</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://flypakistan.pk/assets/img/attractions/Mangla%20Dam.png"
+                alt="Mangla"
+              />
+              <p>Mangla</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Guides_Memmorial.JPG/1200px-Guides_Memmorial.JPG"
+                alt="Mardan"
+              />
+              <p>Mardan</p>
+            </div>
+          </div>
+          <div class="row">
+            <!-- row-5 -->
+            <div class="card">
+              <img
+                src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Multan.jpg?width=400&height=400"
+                alt="Multan"
+              />
+              <p>Multan</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://i.tribune.com.pk/media/images/545461-murreeinp-1367907090/545461-murreeinp-1367907090.jpg"
+                alt="Murree"
+              />
+              <p>Murree</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Peshawar.jpg?width=400&height=400"
+                alt="Peshawar"
+              />
+              <p>Peshawar</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Sialkot.jpg?width=400&height=400"
+                alt="Sialkot"
+              />
+              <p>Sialkot</p>
+            </div>
+          </div>
+          <div class="row">
+            <!-- row-6 -->
+
+            <div class="card">
+              <img
+                src="https://images.deliveryhero.io/image/foodpanda/city-tile-pk/Sukkur.jpg?width=400&height=400"
+                alt="Sukhur"
+              />
+              <p>Sukhur</p>
+            </div>
+            <div class="card">
+              <img
+                src="https://live.staticflickr.com/4084/4978906915_9db192c7f6_b.jpg"
+                alt="Wah Cantt"
+              />
+              <p>Wah Cantt</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Download aap -->
+      <section class="App">
+        <p class="caption-heading">Put us in your pocket</p>
+          <div class="main-container">
+            <div class="image-container">
+              <img src="./images/home-foodpanda-apps.webp" alt="" />
+            </div>
+            <div class="contan-cintainer">
+              <p class="sub-heading">
+                Download the food and groceries you love
+              </p>
+              <p class="text">
+                It's all at your fingertips – the restaurants and shops you
+                love. Find the right food and groceries to suit your mood, and
+                make the first bite last. Go ahead, download us.
+              </p>
+            </div>
+             
+          </div>
+      </section>
+      <!-- Office -->
+      <section></section>
+      <!-- contant FAQ -->
+      <section></section>
+    </main>
+    <footer>
+      <!-- cities -->
+      <section></section>
+      <!-- Branding -->
+      <section></section>
+      <!-- social links -->
+      <section></section>
+    </footer>
+  </body>
+</html>
